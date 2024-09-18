@@ -39,6 +39,7 @@ const resetValues = (timer, index) => {
     timer.timeLeftSec = 0;
     timer.index = 0;
     timer.name = "Timer";
+    timer.nameFromAlexa = "";
     timer.start_Time = "00:00:00";
     timer.end_Time = "00:00:00";
     timer.inputDevice = "";
@@ -47,6 +48,7 @@ const resetValues = (timer, index) => {
     timer.percent = 0;
     timer.percent2 = 0;
     timer.changeValue = false;
+    timer.id = "";
     _this.setObjectAsync("alexa-timer-vis.0." + index, {
       type: "device",
       common: { name: `` },
